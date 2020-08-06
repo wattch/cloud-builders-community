@@ -10,7 +10,7 @@ steps:
     - "--build-arg=ARCH=${_ARCH}"
     - --tag=gcr.io/${PROJECT_ID}/protoc:${_VERS}-${_ARCH}
     - --tag=gcr.io/${PROJECT_ID}/protoc:latest
-    - "."
+    - "./protoc"
 
 images:
   - "gcr.io/${PROJECT_ID}/protoc:${_VERS}-${_ARCH}"
